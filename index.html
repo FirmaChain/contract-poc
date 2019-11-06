@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Firmachain PoC</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi">
+        <meta property="og:title" content="PoC of FirmaChain" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="//firmachain.org" />
+        <meta property="og:image" content="//firmachain.org/static/thumbnail.jpg"/>
+		<link rel="shortcut icon" href="//firmachain.org/static/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="//firmachain.org/static/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="./static/style.css" type="text/css">
+	</head>
+	<body>
+		<div class="poc">
+			<div class="top">
+				<img class="firma-logo" src="//firmachain.org/static/symbol_indigo.png"/><span class="firma-label">FirmaChain</span>
+				<p class="top-title">Document manipulation verification</p>
+				<p class="top-subtitle">Verification firmachain by matching the hash value of the contract on ethereum with files</p>
+				<p class="top-subtitle-small">* This PoC only works on ropsten testnet *</p>
+				<div class="top-images">
+					<div>
+						<img src="https://stabledocs.com/static/pic_01.png"/>
+						<span>Upload file and sign with your ethereum wallet</span>
+					</div>
+					<div>
+						<img src="https://stabledocs.com/static/pic_02.png"/>
+						<span>Check your hash value and transction ID</span>
+					</div>
+					<div>
+						<img src="https://stabledocs.com/static/pic_03.png"/>
+						<span>Verify file has been successfully uploaded to ethereum</span>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="bottom-form">
+					<p class="bottom-label">Sign</p>
+					<div class="upload-form">
+						<label class="file-upload-btn" for='file-to-sign'>File upload</label>
+						<input class="file-hidden" type="file" id="file-to-sign" accept='*'/>
+					</div>
+				</div>
+				<div class="bottom-form">
+					<p class="bottom-label">Verify</p>
+					<div class="upload-form">
+						<label class="file-upload-btn" for='file-to-check'>File upload</label>
+						<input class="file-hidden" type="file" id="file-to-check" accept='*'/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="//cdn.jsdelivr.net/npm/web3@1.2.2/dist/web3.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script> 
+		<script src="//wzrd.in/standalone/ethereumjs-util@latest"></script>
+		<script src="./index.js"></script>
+		<script src="./econtract.js"></script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "Contract-PoC",
+  "version": "1.0.0",
+  "description": "poc of firmachain contract",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firmachain/Contract-PoC.git"
+  },
+  "keywords": [
+    "poc",
+    "firmachain",
+    "fct"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firmachain/Contract-PoC/issues"
+  },
+  "homepage": "https://github.com/firmachain/Contract-PoC#readme",
+}
